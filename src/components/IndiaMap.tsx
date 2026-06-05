@@ -39,8 +39,10 @@ function IndiaMapInner({ selected, onSelect, height = 580 }: Props) {
   return (
     <div 
       id="india-map-container"
-      className="relative w-full overflow-hidden rounded-2xl bg-gradient-to-b from-surface/20 to-surface/40 p-1" 
-      style={{ height }}
+      className={`relative w-full overflow-hidden rounded-2xl bg-gradient-to-b from-surface/20 to-surface/40 p-1 ${
+        height ? "" : "h-[400px] sm:h-[500px] lg:h-[600px]"
+      }`} 
+      style={height ? { height } : undefined}
     >
       {/* Glow backdrop */}
       <div 
@@ -56,7 +58,7 @@ function IndiaMapInner({ selected, onSelect, height = 580 }: Props) {
         projection="geoMercator"
         projectionConfig={{ scale: 950 }}
         width={800}
-        height={height}
+        height={600}
         style={{ width: "100%", height: "100%" }}
       >
         <ZoomableGroup
@@ -197,7 +199,7 @@ function IndiaMapInner({ selected, onSelect, height = 580 }: Props) {
       </div>
 
       {/* Map Legend */}
-      <div className="absolute bottom-4 left-4 rounded-xl border border-border/80 bg-surface/60 px-3 py-2 text-[10px] text-muted-foreground backdrop-blur-md">
+      <div className="absolute bottom-4 left-4 hidden sm:block rounded-xl border border-border/80 bg-surface/60 px-3 py-2 text-[10px] text-muted-foreground backdrop-blur-md">
         <div className="font-semibold text-foreground uppercase tracking-wider mb-1.5 opacity-80">Schemes Available</div>
         <div className="flex flex-col gap-1">
           <div className="flex items-center gap-2">
