@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { Sparkles, TrendingUp, Building2, Users } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Sparkles, TrendingUp, Building2, Users, X } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { IndiaMap } from "@/components/IndiaMap";
 import { StateSidebar } from "@/components/StateSidebar";
@@ -102,18 +102,58 @@ function Index() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="glass shadow-elegant rounded-3xl p-3 sm:p-4 border border-border/60"
           >
-            <IndiaMap selected={state} onSelect={setState} height={600} />
+            <IndiaMap selected={state} onSelect={setState} />
           </motion.div>
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="h-[632px]"
+            className="hidden lg:block h-[632px]"
           >
             <StateSidebar state={state} onSchemeClick={setActive} />
           </motion.div>
         </div>
       </section>
+
+      {/* Mobile Bottom Sheet Drawer */}
+      <AnimatePresence>
+        {state && (
+          <>
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setState(null)}
+              className="fixed inset-0 z-40 bg-black/70 backdrop-blur-sm lg:hidden"
+            />
+            {/* Drawer sheet */}
+            <motion.div
+              initial={{ y: "100%" }}
+              animate={{ y: 0 }}
+              exit={{ y: "100%" }}
+              transition={{ type: "spring", damping: 25, stiffness: 220 }}
+              className="fixed inset-x-0 bottom-0 z-50 rounded-t-[2.5rem] border-t border-border bg-background shadow-elegant lg:hidden h-[78vh] flex flex-col overflow-hidden"
+            >
+              {/* Handle bar */}
+              <div className="mx-auto my-3 h-1.5 w-12 shrink-0 rounded-full bg-muted-foreground/30" />
+              
+              {/* Close Button */}
+              <button
+                onClick={() => setState(null)}
+                className="absolute right-5 top-4 grid h-8 w-8 place-items-center rounded-full border border-border bg-surface-elevated/80 text-muted-foreground transition-all hover:text-foreground"
+                aria-label="Close Sidebar"
+              >
+                <X className="h-4 w-4" />
+              </button>
+
+              <div className="flex-1 overflow-hidden h-full">
+                <StateSidebar state={state} onSchemeClick={setActive} />
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
 
       {/* TARGET AUDIENCE SECTION */}
       <section className="mx-auto mt-20 max-w-7xl px-4 sm:px-6 pb-12">
