@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://findmysubsidy.com/sitemap.xml
+Sitemap: https://find-my-subsidy.vercel.app/sitemap.xml

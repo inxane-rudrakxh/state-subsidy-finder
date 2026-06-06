@@ -105,8 +105,8 @@ function RootShell({ children }: { children: ReactNode }) {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "FindMySubsidy",
-    "url": "https://findmysubsidy.com",
-    "logo": "https://findmysubsidy.com/logo.png",
+    "url": "https://find-my-subsidy.vercel.app",
+    "logo": "https://find-my-subsidy.vercel.app/logo.png",
     "description": "Discover government subsidies, schemes, grants, and incentives available across Indian states.",
   };
 

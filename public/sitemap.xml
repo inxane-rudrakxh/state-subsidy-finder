@@ -1,507 +1,477 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://findmysubsidy.com/</loc>
+    <loc>https://find-my-subsidy.vercel.app/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/explore</loc>
+    <loc>https://find-my-subsidy.vercel.app/explore</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/about</loc>
+    <loc>https://find-my-subsidy.vercel.app/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/contact</loc>
+    <loc>https://find-my-subsidy.vercel.app/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/maharashtra</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/maharashtra</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/karnataka</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/karnataka</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/tamil-nadu</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/tamil-nadu</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/gujarat</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/gujarat</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/uttar-pradesh</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/uttar-pradesh</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/telangana</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/telangana</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/rajasthan</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/rajasthan</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/west-bengal</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/west-bengal</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/kerala</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/kerala</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/punjab</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/punjab</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/haryana</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/haryana</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/madhya-pradesh</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/madhya-pradesh</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/odisha</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/odisha</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/bihar</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/bihar</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/andhra-pradesh</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/andhra-pradesh</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/assam</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/assam</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/jharkhand</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/jharkhand</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/chhattisgarh</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/chhattisgarh</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/uttarakhand</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/uttarakhand</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/himachal-pradesh</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/himachal-pradesh</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/goa</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/goa</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/jammu-and-kashmir</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/jammu-and-kashmir</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/delhi</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/delhi</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/state/list</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/arunachal-pradesh</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/maharashtra-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/manipur</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://findmysubsidy.com/scheme/maharashtra-2</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://findmysubsidy.com/scheme/maharashtra-3</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://findmysubsidy.com/scheme/maharashtra-4</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://findmysubsidy.com/scheme/maharashtra-5</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://findmysubsidy.com/scheme/maharashtra-6</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://findmysubsidy.com/scheme/karnataka-1</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/karnataka-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/meghalaya</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/karnataka-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/mizoram</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/karnataka-4</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/nagaland</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/karnataka-5</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/sikkim</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/tamil-nadu-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/tripura</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/tamil-nadu-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/andaman-and-nicobar-islands</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/tamil-nadu-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/chandigarh</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/tamil-nadu-4</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/dadra-and-nagar-haveli-and-daman-and-diu</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/tamil-nadu-5</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/ladakh</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/gujarat-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/lakshadweep</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/gujarat-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/puducherry</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/gujarat-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/state/list</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/gujarat-4</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/maharashtra-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/gujarat-5</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/maharashtra-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/uttar-pradesh-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/maharashtra-3</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/uttar-pradesh-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/karnataka-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/uttar-pradesh-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/karnataka-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/uttar-pradesh-4</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/tamil-nadu-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/telangana-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/tamil-nadu-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/telangana-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/gujarat-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/telangana-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/gujarat-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/telangana-4</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/uttar-pradesh-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/rajasthan-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/uttar-pradesh-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/rajasthan-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/telangana-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/rajasthan-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/telangana-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/rajasthan-4</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/rajasthan-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/west-bengal-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/rajasthan-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/west-bengal-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/west-bengal-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/west-bengal-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/west-bengal-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/kerala-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/kerala-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/kerala-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/kerala-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/kerala-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/punjab-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/punjab-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/punjab-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/punjab-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/haryana-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/punjab-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/haryana-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/haryana-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/madhya-pradesh-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/haryana-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/madhya-pradesh-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/haryana-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/odisha-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/madhya-pradesh-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/odisha-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/madhya-pradesh-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/bihar-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/madhya-pradesh-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/bihar-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/odisha-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/andhra-pradesh-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/odisha-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/andhra-pradesh-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/odisha-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/assam-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/bihar-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/assam-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/bihar-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/jharkhand-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/bihar-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/chhattisgarh-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/andhra-pradesh-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/uttarakhand-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/andhra-pradesh-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/himachal-pradesh-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/andhra-pradesh-3</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/goa-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/assam-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/goa-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/assam-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/jammu-and-kashmir-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/jharkhand-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/delhi-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/jharkhand-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/arunachal-pradesh-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/chhattisgarh-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/manipur-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/chhattisgarh-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/meghalaya-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/uttarakhand-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/mizoram-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/uttarakhand-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/nagaland-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/himachal-pradesh-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/sikkim-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/himachal-pradesh-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/tripura-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/goa-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/andaman-and-nicobar-islands-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/goa-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/chandigarh-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/jammu-and-kashmir-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/dadra-and-nagar-haveli-and-daman-and-diu-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/jammu-and-kashmir-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/ladakh-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/delhi-1</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/lakshadweep-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://findmysubsidy.com/scheme/delhi-2</loc>
+    <loc>https://find-my-subsidy.vercel.app/scheme/puducherry-1</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

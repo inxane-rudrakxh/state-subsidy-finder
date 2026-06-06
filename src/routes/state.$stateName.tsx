@@ -54,7 +54,7 @@ export const Route = createFileRoute("/state/$stateName")({
               "name": `Government of ${stateName}`,
             },
             "description": description,
-            "url": `https://findmysubsidy.com/state/${stateName.toLowerCase().replace(/\s+/g, "-")}`,
+            "url": `https://find-my-subsidy.vercel.app/state/${stateName.toLowerCase().replace(/\s+/g, "-")}`,
           }),
         },
       ],

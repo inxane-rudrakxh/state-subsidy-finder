@@ -31,7 +31,7 @@ export const Route = createFileRoute("/scheme/$schemeId")({
                 "name": `Government of ${loaderData.scheme.state}`,
               },
               "description": loaderData.scheme.description,
-              "url": `https://findmysubsidy.com/scheme/${loaderData.scheme.id}`,
+              "url": `https://find-my-subsidy.vercel.app/scheme/${loaderData.scheme.id}`,
             }),
           },
           {
