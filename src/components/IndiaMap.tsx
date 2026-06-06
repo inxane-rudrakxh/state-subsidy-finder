@@ -1,4 +1,5 @@
-import { ComposableMap, Geographies, Geography, ZoomableGroup } from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, ZoomableGroup, Marker } from "react-simple-maps";
+import { geoCentroid } from "d3-geo";
 import { memo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
@@ -8,6 +9,45 @@ type Props = {
   selected: string | null;
   onSelect: (state: string) => void;
   height?: number;
+};
+
+const ABBREVIATIONS: Record<string, string> = {
+  "Andhra Pradesh": "AP",
+  "Arunachal Pradesh": "AR",
+  "Assam": "AS",
+  "Bihar": "BR",
+  "Chhattisgarh": "CG",
+  "Goa": "GA",
+  "Gujarat": "GJ",
+  "Haryana": "HR",
+  "Himachal Pradesh": "HP",
+  "Jharkhand": "JH",
+  "Karnataka": "KA",
+  "Kerala": "KL",
+  "Madhya Pradesh": "MP",
+  "Maharashtra": "MH",
+  "Manipur": "MN",
+  "Meghalaya": "ML",
+  "Mizoram": "MZ",
+  "Nagaland": "NL",
+  "Odisha": "OD",
+  "Punjab": "PB",
+  "Rajasthan": "RJ",
+  "Sikkim": "SK",
+  "Tamil Nadu": "TN",
+  "Telangana": "TG",
+  "Tripura": "TR",
+  "Uttar Pradesh": "UP",
+  "Uttarakhand": "UK",
+  "West Bengal": "WB",
+  "Andaman and Nicobar Islands": "ANI",
+  "Chandigarh": "CH",
+  "Dadra and Nagar Haveli and Daman and Diu": "DNDD",
+  "Delhi": "DL",
+  "Jammu and Kashmir": "JK",
+  "Ladakh": "LA",
+  "Lakshadweep": "LD",
+  "Puducherry": "PY",
 };
 
 function IndiaMapInner({ selected, onSelect, height = 580 }: Props) {
@@ -69,8 +109,8 @@ function IndiaMapInner({ selected, onSelect, height = 580 }: Props) {
           minZoom={1}
         >
           <Geographies geography="/india-states.json">
-            {({ geographies }) =>
-              geographies.map((geo) => {
+            {({ geographies }) => {
+              const paths = geographies.map((geo) => {
                 const name: string = geo.properties.st_nm;
                 const isActive = selected === name;
                 const schemes = schemesByState(name);
@@ -144,8 +184,40 @@ function IndiaMapInner({ selected, onSelect, height = 580 }: Props) {
                     />
                   </a>
                 );
-              })
-            }
+              });
+              
+              const labels = geographies.map((geo) => {
+                const name: string = geo.properties.st_nm;
+                const centroid = geoCentroid(geo);
+                // Adjust some centroids manually for better appearance
+                let [x, y] = centroid;
+                if (name === "Puducherry") { x += 0.5; y += 0.5; }
+                if (name === "Dadra and Nagar Haveli and Daman and Diu") { x -= 0.5; y -= 0.5; }
+                
+                return (
+                  <Marker key={`${geo.rsmKey}-label`} coordinates={[x, y]}>
+                    <text
+                      textAnchor="middle"
+                      y={3}
+                      className="pointer-events-none select-none text-[8px] font-medium tracking-tight"
+                      style={{ 
+                        fill: "rgba(255, 255, 255, 0.7)", 
+                        textShadow: "0px 1px 2px rgba(0,0,0,0.8)" 
+                      }}
+                    >
+                      {ABBREVIATIONS[name] || ""}
+                    </text>
+                  </Marker>
+                );
+              });
+
+              return (
+                <>
+                  {paths}
+                  {labels}
+                </>
+              );
+            }}
           </Geographies>
         </ZoomableGroup>
       </ComposableMap>

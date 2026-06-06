@@ -92,8 +92,13 @@ export function StateSidebar({ state, onSchemeClick }: Props) {
               <div className="mt-4 flex flex-wrap items-center gap-4 text-xs">
                 <div className="flex items-center gap-2">
                   <FileText className="h-4 w-4 text-primary" />
-                  <span className="text-muted-foreground">Schemes</span>
+                  <span className="text-muted-foreground">Total Schemes</span>
                   <span className="font-semibold">{schemes.length}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Filter className="h-4 w-4 text-primary" />
+                  <span className="text-muted-foreground">Available</span>
+                  <span className="font-semibold">{filtered.length}</span>
                 </div>
                 {info && (
                   <div className="flex items-center gap-2">
@@ -174,13 +179,8 @@ export function StateSidebar({ state, onSchemeClick }: Props) {
                 </div>
               ) : (
                 filtered.map((s, i) => (
-                  <motion.a
+                  <motion.div
                     key={s.id}
-                    href={`/scheme/${s.id}`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      onSchemeClick(s);
-                    }}
                     initial={{ opacity: 0, y: 8 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: Math.min(i, 8) * 0.04, duration: 0.3 }}
@@ -192,24 +192,43 @@ export function StateSidebar({ state, onSchemeClick }: Props) {
                         <Sparkles className="h-4.5 w-4.5" />
                       </div>
                       <div className="min-w-0 flex-1">
-                        <div className="flex items-start justify-between gap-3">
-                          <h4 className="font-semibold leading-snug text-sm tracking-tight group-hover:text-primary transition-colors">{s.name}</h4>
-                          <ArrowRight className="h-4 w-4 shrink-0 translate-x-0 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:text-primary" />
+                        <div className="flex items-start justify-between gap-3 relative z-10">
+                          <a
+                            href={`/scheme/${s.id}`}
+                            onClick={(e) => {
+                              e.preventDefault();
+                              onSchemeClick(s);
+                            }}
+                            className="font-semibold leading-snug text-sm tracking-tight group-hover:text-primary transition-colors before:absolute before:-inset-4 before:z-0"
+                          >
+                            {s.name}
+                          </a>
+                          <ArrowRight className="h-4 w-4 shrink-0 translate-x-0 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:text-primary pointer-events-none" />
                         </div>
-                        <div className="text-[10px] text-muted-foreground/80 font-medium tracking-wide mt-0.5 truncate uppercase">
+                        <div className="text-[10px] text-muted-foreground/80 font-medium tracking-wide mt-0.5 truncate uppercase relative z-10 pointer-events-none">
                           {s.department}
                         </div>
-                        <div className="mt-2">
+                        <div className="mt-2 relative z-10 pointer-events-none">
                           <span className="inline-block rounded-full bg-primary/10 px-2 py-0.5 text-[9px] font-semibold text-primary uppercase tracking-wider">
                             {s.category}
                           </span>
                         </div>
-                        <p className="mt-2 line-clamp-2 text-xs text-muted-foreground leading-relaxed">
+                        <p className="mt-2 line-clamp-2 text-xs text-muted-foreground leading-relaxed relative z-10 pointer-events-none">
                           {s.shortDescription}
                         </p>
+                        <div className="mt-4 pt-3 border-t border-border/40 flex justify-end relative z-20">
+                          <a 
+                            href={s.officialUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="px-3 py-1.5 bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider rounded-lg hover:bg-primary hover:text-primary-foreground transition-all flex items-center gap-1.5"
+                          >
+                            Apply Now
+                          </a>
+                        </div>
                       </div>
                     </div>
-                  </motion.a>
+                  </motion.div>
                 ))
               )}
             </div>

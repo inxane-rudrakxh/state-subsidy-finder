@@ -134,12 +134,12 @@ function SchemeDetail() {
           </h1>
           <p className="mt-4 max-w-2xl text-muted-foreground">{scheme.description}</p>
           <a
-            href={scheme.website}
+            href={scheme.officialUrl}
             target="_blank"
             rel="noreferrer"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-primary-glow px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-primary-glow px-5 py-3 text-sm font-semibold text-primary-foreground shadow-glow hover:scale-[1.02] transition-transform"
           >
-            Visit Official Portal <ExternalLink className="h-4 w-4" />
+            Apply Now on Official Portal <ExternalLink className="h-4 w-4" />
           </a>
         </div>
 
@@ -148,6 +148,17 @@ function SchemeDetail() {
           <Block icon={ListChecks} title="Eligibility" items={scheme.eligibility} />
           <Block icon={FileText} title="Required Documents" items={scheme.documents} />
           <Block icon={Workflow} title="Application Process" items={scheme.process} />
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <a
+            href={scheme.officialUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primary to-primary-glow px-8 py-4 text-base font-bold text-primary-foreground shadow-glow hover:scale-[1.03] transition-transform"
+          >
+            Apply Now on Official Portal <ExternalLink className="h-5 w-5" />
+          </a>
         </div>
       </section>
     </Layout>
