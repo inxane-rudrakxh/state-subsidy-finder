@@ -58,7 +58,7 @@ export function StateSidebar({ state, onSchemeClick }: Props) {
             </div>
             <h3 className="font-display text-2xl font-semibold">Select a State</h3>
             <p className="mt-3 max-w-xs text-sm text-muted-foreground leading-relaxed">
-              Click on any state on the map to discover available subsidies and government schemes.
+              Tap any state on the India map to discover available subsidies and schemes.
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-2 text-[11px] text-muted-foreground">
               {["Maharashtra", "Karnataka", "Tamil Nadu", "Gujarat"].map((s) => (
@@ -174,14 +174,18 @@ export function StateSidebar({ state, onSchemeClick }: Props) {
                 </div>
               ) : (
                 filtered.map((s, i) => (
-                  <motion.button
+                  <motion.a
                     key={s.id}
-                    onClick={() => onSchemeClick(s)}
+                    href={`/scheme/${s.id}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onSchemeClick(s);
+                    }}
                     initial={{ opacity: 0, y: 8 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: Math.min(i, 8) * 0.04, duration: 0.3 }}
                     whileHover={{ y: -2 }}
-                    className="group relative w-full overflow-hidden rounded-2xl border border-border/60 bg-gradient-to-br from-surface/80 to-surface-elevated/90 p-4 text-left transition-all duration-300 hover:border-primary/40 hover:shadow-glow hover:bg-surface-elevated"
+                    className="group relative w-full block overflow-hidden rounded-2xl border border-border/60 bg-gradient-to-br from-surface/80 to-surface-elevated/90 p-4 text-left transition-all duration-300 hover:border-primary/40 hover:shadow-glow hover:bg-surface-elevated"
                   >
                     <div className="flex items-start gap-3">
                       <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary ring-1 ring-primary/20 group-hover:bg-primary/20 transition-all">
@@ -205,7 +209,7 @@ export function StateSidebar({ state, onSchemeClick }: Props) {
                         </p>
                       </div>
                     </div>
-                  </motion.button>
+                  </motion.a>
                 ))
               )}
             </div>

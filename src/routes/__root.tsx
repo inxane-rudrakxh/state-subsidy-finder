@@ -100,10 +100,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 });
 
 function RootShell({ children }: { children: ReactNode }) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FindMySubsidy",
+    "url": "https://findmysubsidy.com",
+    "logo": "https://findmysubsidy.com/logo.png",
+    "description": "Discover government subsidies, schemes, grants, and incentives available across Indian states.",
+  };
+
   return (
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
       </head>
       <body>
         {children}

@@ -77,65 +77,72 @@ function IndiaMapInner({ selected, onSelect, height = 580 }: Props) {
                 const hasSchemes = schemes.length > 0;
 
                 return (
-                  <Geography
+                  <a
                     key={geo.rsmKey}
-                    geography={geo}
-                    onClick={() => onSelect(name)}
-                    onMouseEnter={() => {
-                      setHoveredState({ name, x: 0, y: 0 });
+                    href={`/state/${name.toLowerCase().replace(/\s+/g, "-")}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      onSelect(name);
                     }}
-                    onMouseMove={(event) => {
-                      const container = document.getElementById("india-map-container");
-                      if (container) {
-                        const bounds = container.getBoundingClientRect();
-                        setHoveredState({
-                          name,
-                          x: event.clientX - bounds.left,
-                          y: event.clientY - bounds.top,
-                        });
-                      }
-                    }}
-                    onMouseLeave={() => {
-                      setHoveredState(null);
-                    }}
-                    style={{
-                      default: {
-                        fill: isActive 
-                          ? "oklch(0.72 0.18 152)" 
-                          : hasSchemes 
-                            ? "oklch(0.24 0.03 250)" 
-                            : "oklch(0.18 0.01 250)",
-                        stroke: isActive 
-                          ? "oklch(0.82 0.20 152)" 
-                          : hasSchemes 
-                            ? "oklch(0.35 0.03 250)" 
-                            : "oklch(0.22 0.01 250)",
-                        strokeWidth: isActive ? 1.2 : 0.6,
-                        outline: "none",
-                        transition: "fill 300ms ease, stroke 300ms ease, filter 300ms ease",
-                        filter: isActive ? "drop-shadow(0 0 15px oklch(0.72 0.18 152 / 0.6))" : "none",
-                        cursor: "pointer",
-                      },
-                      hover: {
-                        fill: isActive 
-                          ? "oklch(0.78 0.19 152)" 
-                          : hasSchemes 
-                            ? "oklch(0.32 0.07 180)" 
-                            : "oklch(0.22 0.02 250)",
-                        stroke: hasSchemes ? "oklch(0.72 0.18 152)" : "oklch(0.30 0.02 250)",
-                        strokeWidth: isActive ? 1.5 : 1.0,
-                        outline: "none",
-                        filter: hasSchemes 
-                          ? "drop-shadow(0 0 10px oklch(0.72 0.18 152 / 0.45))" 
-                          : "none",
-                        cursor: "pointer",
-                      },
-                      pressed: {
-                        fill: "oklch(0.72 0.18 152)",
-                        outline: "none",
-                      },
-                    }}
-                  />
+                  >
+                    <Geography
+                      geography={geo}
+                      onMouseEnter={() => {
+                        setHoveredState({ name, x: 0, y: 0 });
+                      }}
+                      onMouseMove={(event) => {
+                        const container = document.getElementById("india-map-container");
+                        if (container) {
+                          const bounds = container.getBoundingClientRect();
+                          setHoveredState({
+                            name,
+                            x: event.clientX - bounds.left,
+                            y: event.clientY - bounds.top,
+                          });
+                        }
+                      }}
+                      onMouseLeave={() => {
+                        setHoveredState(null);
+                      }}
+                      style={{
+                        default: {
+                          fill: isActive 
+                            ? "oklch(0.72 0.18 152)" 
+                            : hasSchemes 
+                              ? "oklch(0.24 0.03 250)" 
+                              : "oklch(0.18 0.01 250)",
+                          stroke: isActive 
+                            ? "oklch(0.82 0.20 152)" 
+                            : hasSchemes 
+                              ? "oklch(0.35 0.03 250)" 
+                              : "oklch(0.22 0.01 250)",
+                          strokeWidth: isActive ? 1.2 : 0.6,
+                          outline: "none",
+                          transition: "fill 300ms ease, stroke 300ms ease, filter 300ms ease",
+                          filter: isActive ? "drop-shadow(0 0 15px oklch(0.72 0.18 152 / 0.6))" : "none",
+                          cursor: "pointer",
+                        },
+                        hover: {
+                          fill: isActive 
+                            ? "oklch(0.78 0.19 152)" 
+                            : hasSchemes 
+                              ? "oklch(0.32 0.07 180)" 
+                              : "oklch(0.22 0.02 250)",
+                          stroke: hasSchemes ? "oklch(0.72 0.18 152)" : "oklch(0.30 0.02 250)",
+                          strokeWidth: isActive ? 1.5 : 1.0,
+                          outline: "none",
+                          filter: hasSchemes 
+                            ? "drop-shadow(0 0 10px oklch(0.72 0.18 152 / 0.45))" 
+                            : "none",
+                          cursor: "pointer",
+                        },
+                        pressed: {
+                          fill: "oklch(0.72 0.18 152)",
+                          outline: "none",
+                        },
+                      }}
+                    />
+                  </a>
                 );
               })
             }

@@ -14,7 +14,8 @@ import { Route as ExploreRouteImport } from './routes/explore'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as SchemesSchemeIdRouteImport } from './routes/schemes.$schemeId'
+import { Route as StateStateNameRouteImport } from './routes/state.$stateName'
+import { Route as SchemeSchemeIdRouteImport } from './routes/scheme.$schemeId'
 
 const SchemesRoute = SchemesRouteImport.update({
   id: '/schemes',
@@ -41,10 +42,15 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SchemesSchemeIdRoute = SchemesSchemeIdRouteImport.update({
-  id: '/$schemeId',
-  path: '/$schemeId',
-  getParentRoute: () => SchemesRoute,
+const StateStateNameRoute = StateStateNameRouteImport.update({
+  id: '/state/$stateName',
+  path: '/state/$stateName',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SchemeSchemeIdRoute = SchemeSchemeIdRouteImport.update({
+  id: '/scheme/$schemeId',
+  path: '/scheme/$schemeId',
+  getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -52,16 +58,18 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/explore': typeof ExploreRoute
-  '/schemes': typeof SchemesRouteWithChildren
-  '/schemes/$schemeId': typeof SchemesSchemeIdRoute
+  '/schemes': typeof SchemesRoute
+  '/scheme/$schemeId': typeof SchemeSchemeIdRoute
+  '/state/$stateName': typeof StateStateNameRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/explore': typeof ExploreRoute
-  '/schemes': typeof SchemesRouteWithChildren
-  '/schemes/$schemeId': typeof SchemesSchemeIdRoute
+  '/schemes': typeof SchemesRoute
+  '/scheme/$schemeId': typeof SchemeSchemeIdRoute
+  '/state/$stateName': typeof StateStateNameRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -69,8 +77,9 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/explore': typeof ExploreRoute
-  '/schemes': typeof SchemesRouteWithChildren
-  '/schemes/$schemeId': typeof SchemesSchemeIdRoute
+  '/schemes': typeof SchemesRoute
+  '/scheme/$schemeId': typeof SchemeSchemeIdRoute
+  '/state/$stateName': typeof StateStateNameRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -80,7 +89,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/explore'
     | '/schemes'
-    | '/schemes/$schemeId'
+    | '/scheme/$schemeId'
+    | '/state/$stateName'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -88,7 +98,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/explore'
     | '/schemes'
-    | '/schemes/$schemeId'
+    | '/scheme/$schemeId'
+    | '/state/$stateName'
   id:
     | '__root__'
     | '/'
@@ -96,7 +107,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/explore'
     | '/schemes'
-    | '/schemes/$schemeId'
+    | '/scheme/$schemeId'
+    | '/state/$stateName'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -104,7 +116,9 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   ExploreRoute: typeof ExploreRoute
-  SchemesRoute: typeof SchemesRouteWithChildren
+  SchemesRoute: typeof SchemesRoute
+  SchemeSchemeIdRoute: typeof SchemeSchemeIdRoute
+  StateStateNameRoute: typeof StateStateNameRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -144,33 +158,31 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/schemes/$schemeId': {
-      id: '/schemes/$schemeId'
-      path: '/$schemeId'
-      fullPath: '/schemes/$schemeId'
-      preLoaderRoute: typeof SchemesSchemeIdRouteImport
-      parentRoute: typeof SchemesRoute
+    '/state/$stateName': {
+      id: '/state/$stateName'
+      path: '/state/$stateName'
+      fullPath: '/state/$stateName'
+      preLoaderRoute: typeof StateStateNameRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/scheme/$schemeId': {
+      id: '/scheme/$schemeId'
+      path: '/scheme/$schemeId'
+      fullPath: '/scheme/$schemeId'
+      preLoaderRoute: typeof SchemeSchemeIdRouteImport
+      parentRoute: typeof rootRouteImport
     }
   }
 }
-
-interface SchemesRouteChildren {
-  SchemesSchemeIdRoute: typeof SchemesSchemeIdRoute
-}
-
-const SchemesRouteChildren: SchemesRouteChildren = {
-  SchemesSchemeIdRoute: SchemesSchemeIdRoute,
-}
-
-const SchemesRouteWithChildren =
-  SchemesRoute._addFileChildren(SchemesRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   ExploreRoute: ExploreRoute,
-  SchemesRoute: SchemesRouteWithChildren,
+  SchemesRoute: SchemesRoute,
+  SchemeSchemeIdRoute: SchemeSchemeIdRoute,
+  StateStateNameRoute: StateStateNameRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

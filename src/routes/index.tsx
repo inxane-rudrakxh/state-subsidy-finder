@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
 const POPULAR_STATES = ["Maharashtra", "Karnataka", "Tamil Nadu", "Gujarat", "Uttar Pradesh", "Telangana"];
 
 function Index() {
-  const [state, setState] = useState<string | null>("Maharashtra");
+  const [state, setState] = useState<string | null>(null);
   const [active, setActive] = useState<Scheme | null>(null);
 
   return (

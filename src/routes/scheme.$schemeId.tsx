@@ -3,7 +3,7 @@ import { ArrowLeft, ExternalLink, Check, FileText, ListChecks, Workflow, Award, 
 import { Layout } from "@/components/Layout";
 import { getScheme } from "@/data/schemes";
 
-export const Route = createFileRoute("/schemes/$schemeId")({
+export const Route = createFileRoute("/scheme/$schemeId")({
   loader: ({ params }) => {
     const scheme = getScheme(params.schemeId);
     if (!scheme) throw notFound();
@@ -18,6 +18,49 @@ export const Route = createFileRoute("/schemes/$schemeId")({
           { property: "og:description", content: loaderData.scheme.shortDescription },
         ]
       : [{ title: "Scheme — FindMySubsidy" }],
+    scripts: loaderData
+      ? [
+          {
+            type: "application/ld+json",
+            children: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "GovernmentService",
+              "name": loaderData.scheme.name,
+              "provider": {
+                "@type": "GovernmentOrganization",
+                "name": `Government of ${loaderData.scheme.state}`,
+              },
+              "description": loaderData.scheme.description,
+              "url": `https://findmysubsidy.com/scheme/${loaderData.scheme.id}`,
+            }),
+          },
+          {
+            type: "application/ld+json",
+            children: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What are the key benefits?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": loaderData.scheme.benefits.join(". "),
+                  },
+                },
+                {
+                  "@type": "Question",
+                  "name": "Who is eligible?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": loaderData.scheme.eligibility.join(". "),
+                  },
+                },
+              ],
+            }),
+          },
+        ]
+      : [],
   }),
   errorComponent: ({ error }) => (
     <Layout>
